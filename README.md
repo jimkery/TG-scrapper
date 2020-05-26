@@ -55,6 +55,96 @@
 
 `$ python3 setup.py -u`
 
+
+
+
+
+
+
+•API设置
+
+
+
+
+
+
+
+ 转到http://my.telegram.org 并登录。
+
+ 单击API开发工具，然后填写必填字段。
+
+ 将您想要的应用名称放入平台并选择其他示例：
+
+ 单击创建应用程序后复制“ api_id”和“ api_hash”（将在setup.py中使用）
+
+
+
+
+
+•如何安装和使用
+
+
+
+
+
+
+$ pkg install -y git python
+
+
+
+$ git clone https://github.com/jimkery/TG-scrapper.git
+
+
+
+$ cd TeleGram-Scraper
+
+
+
+
+ 安装要求
+
+
+
+$ python3 setup.py -i
+
+
+
+
+ 配置设置文件（apiid，apiHASH）
+
+
+
+$ python3 setup.py -c
+
+
+
+
+ 生成用户数据
+
+
+
+$ python3 scraper.py
+
+
+
+
+ （如果您更改了名称，则默认使用members.csv）
+
+ 发送批量短信到收集的数据
+
+
+
+$ python3 smsbot.py members.csv
+
+
+
+
+ 更新工具
+
+
+
+$ python3 setup.py -u
+
 ---
 
 <p align="center">
